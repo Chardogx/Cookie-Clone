@@ -1,0 +1,42 @@
+<!--Charles Kelsey 6/10/22
+adapted from https://kastark.co.uk/articles/incrementals.html-->
+
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="interface.css" />
+	</head>
+	<body>
+		<button onclick="clickFood(1)">Harvest Food</button>
+		<button onclick="clickLogs(1)">Chop Logs</button>
+        <button onclick="clickOre(1)">Mine Ore</button>
+		<button onclick="clickScience(1)">Research</button>
+        <button onclick="researchAll()">Research All</button>
+		<br />
+		Food: <span id="food">0</span>
+		<br />
+		Logs: <span id="logs">0</span>
+		<br />
+		Ore: <span id="ore">0</span>
+		<br />
+		Science: <span id="science">0</span>
+		<br />
+		<button onclick="hireFarmer()">Hire Farmer: <span id="farmerCost">10</span> food</button>
+		<button onclick="hireLumberjack()">Hire Lumberjack: <span id="lumberjackCost">10</span> food</button>
+		<button onclick="hireMiner()">Hire Miner: <span id="minerCost">10</span> food</button>
+		<button onclick="hireScientist()">Hire Scientist: <span id="scientistCost">10</span> food</button>
+		<br />
+        Farmers: <span id="farmers">0</span>
+        <br />
+		Lumberjacks: <span id="lumberjacks">0</span>
+        <br />
+		Miners: <span id="miners">0</span>
+		<br />
+        Scientists: <span id="scientists">0</span>
+        <br />
+        <button onclick="toggleScience()"><span id="scienceStatus">Pause</span> Science</button>
+        <br />
+        <br />
+        <button onclick="clickDev()">Dev Button</button>
+		<script type="text/javascript" src="main.js"></script>
+	</body>
+</html>
