@@ -1,4 +1,4 @@
-//Charles Kelsey 6/10/22
+//Charles Kelsey 6/28/22
 //adapted from https://kastark.co.uk/articles/incrementals.html
 //and https://kastark.co.uk/articles/incrementals-part-2.html
 
