@@ -5,12 +5,14 @@ adapted from https://kastark.co.uk/articles/incrementals.html-->
 	<head>
 		<link rel="stylesheet" type="text/css" href="interface.css" />
 	</head>
-	<body>
-		<button onclick="clickFood(1)">Harvest Food</button>
-		<button onclick="clickLogs(1)">Chop Logs</button>
-        <button onclick="clickOre(1)">Mine Ore</button>
-		<button onclick="clickScience(1)">Research</button>
-        <button onclick="researchAll()">Research All</button>
+	<body onload="load()">
+		<button onclick="clickFood()">Harvest Food</button>
+		<button onclick="clickLogs()">Chop Logs</button>
+        <button onclick="clickOre()">Mine Ore</button>
+		<br />
+		<button onclick="clickScience()">Crude Research</button>
+		<button onclick="clickTenPercentScience()">Crude Research 10%</button>
+        <button onclick="clickAllScience()">Crude Research All</button>
 		<br />
 		Food: <span id="food">0</span>
 		<br />
@@ -33,10 +35,17 @@ adapted from https://kastark.co.uk/articles/incrementals.html-->
 		<br />
         Scientists: <span id="scientists">0</span>
         <br />
+		<button onclick="toggleChopping()"><span id="choppingStatus">Pause</span> Chopping</button>
+		<button onclick="toggleMining()"><span id="miningStatus">Pause</span> Mining</button>
         <button onclick="toggleScience()"><span id="scienceStatus">Pause</span> Science</button>
+		<br />
+		<button onclick="save()">Save</button>
+		<button onclick="load()">Load</button>
+		<br />
+		<button onclick="clickDeleteSave()"><span id="confirmDeleteSave">Delete Save</span></button>
+		<br />
         <br />
-        <br />
-        <button onclick="clickDev()">Dev Button</button>
+        <button onclick="clickDev()">Dev Button (skip 3600s)</button>
 		<script type="text/javascript" src="main.js"></script>
 	</body>
 </html>
